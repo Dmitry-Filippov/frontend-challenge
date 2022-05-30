@@ -1,0 +1,49 @@
+.card {
+  position: relative;
+  width: 225px;
+  height: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover .card__img {
+  width: 256px;
+  height: 256px;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
+}
+
+.card:hover .card__button {
+  opacity: 1;
+}
+
+.card__img {
+  width: 225px;
+  height: 225px;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.2s ease-in;
+}
+
+.card__button {
+  background: url("../../images/favorite_border.png");
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  opacity: 0;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background: url("../../images/favorite-hover.png");
+}
+
+.card__button_liked {
+  background: url("../../images/favorite-active.png");
+}
